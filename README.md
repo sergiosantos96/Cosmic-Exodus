@@ -4,4 +4,4 @@ A React and responsive website for the video game Cosmic Exodus
 # Tech Stack
 React | CSS | Styled-Components | JS | Moralis
 
-![image]('./public/cosmic.png')
+![image]('cosmic.png')
