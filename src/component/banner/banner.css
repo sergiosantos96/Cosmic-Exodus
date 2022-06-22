@@ -1,0 +1,21 @@
+.banner__image {
+  width: 100%;
+}
+.banner__container {
+  visibility: hidden;
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .banner__image {
+    visibility: hidden;
+    display: none;
+  }
+  .banner__container {
+    visibility: visible;
+    display: block;
+    background-image: url("../../assets/Banners/Vertical_banner.png");
+    width: 100%;
+    height: 40rem;
+  }
+}

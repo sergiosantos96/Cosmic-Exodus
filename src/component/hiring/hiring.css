@@ -1,0 +1,184 @@
+.hiring__banner {
+  width: 100%;
+}
+.hiring__verticalbanner {
+  display: none;
+}
+.hiring-btn {
+  background-color: transparent;
+  color: #787ca9;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+.hiring__menu {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+.hiring__menu--active {
+  color: #30d1ff;
+}
+.hiring__container-grid {
+  max-width: 60.25rem;
+  margin: auto;
+}
+.hiring__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1.875rem;
+}
+.hiring__title {
+  margin-top: 4.375rem;
+}
+
+.hiring__card {
+  border: 1px solid rgba(22, 33, 91, 0.5);
+  background: rgba(22, 33, 91, 0.5);
+  border-radius: 10px;
+  width: 300px;
+  height: 136px;
+  padding-left: 1.25rem;
+  cursor: pointer;
+}
+
+.hiring__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.hiring__position {
+  text-align: left;
+  color: #e0eaf8;
+  font-size: 1.25rem;
+}
+.hiring__localition {
+  color: #787ca9;
+  font-size: 1.25rem;
+  margin: 0;
+}
+.hiring__main-container {
+  text-align: center;
+}
+
+.hiring__container {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+h2 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+.hiring__line {
+  border: 1px solid #16215b;
+  margin: 0;
+  margin: 2rem;
+}
+.hiring__subtitle {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3.1481rem;
+  margin-bottom: 4rem;
+}
+
+.dropdown {
+  visibility: hidden;
+  display: none;
+}
+
+@media screen and (max-width: 860px) {
+  .hiring__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1.875rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .hiring-btn {
+    visibility: hidden;
+    display: none;
+  }
+
+  .dropdown {
+    visibility: visible;
+    display: block;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 75%;
+  }
+  .dropdown select {
+    display: inline-block;
+    font-size: 1.25rem;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 9px;
+    outline: 0;
+    border: 2px solid;
+    border-radius: 5px;
+    background: #0c112a;
+    color: #e0eaf8;
+    appearance: none;
+  }
+  .dropdown select::-ms-expand {
+    display: none;
+  }
+  .dropdown select:hover,
+  .dropdown select:focus {
+    color: #e0eaf8;
+    background: #0c112a;
+  }
+  .dropdown select:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  .dropdown_arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 0px;
+    height: 0px;
+    border: solid #e0eaf8;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .dropdown select:hover ~ .dropdown_arrow,
+  .dropdown select:focus ~ .dropdown_arrow {
+    border-color: #e0eaf8;
+  }
+  .dropdown select:disabled ~ .dropdown_arrow {
+    border-top-color: #e0eaf8;
+  }
+  .hiring__grid {
+    margin: 0 15%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  .hiring__position,
+  .hiring__localition {
+    font-size: 20px;
+  }
+  .hiring__localition {
+    padding: 0;
+  }
+  .hiring__icon {
+    height: 90%;
+    padding-right: 0.625rem;
+  }
+}
+@media screen and (min-width: 180px) and (max-width: 400px) {
+  .hiring__banner {
+    display: none;
+  }
+  .hiring__verticalbanner {
+    display: block;
+  }
+}

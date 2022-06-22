@@ -1,0 +1,35 @@
+.hiring__details {
+  background-color: #16215b80;
+  padding: 1.25rem;
+  border-radius: 0.9375rem;
+  width: 973px;
+  margin-inline: auto;
+  font-size: 1.125rem;
+}
+
+.hiring__info-detail {
+  font-size: 1rem;
+}
+.hiring__subtitles {
+  font-size: 1.125rem;
+}
+
+#apply_button {
+  width: auto;
+  margin-inline: auto;
+}
+.hiring-card-link {
+  text-decoration: none;
+}
+@media screen and (max-width: 640px) {
+  .hiring__details {
+    padding: 1.25rem;
+    border-radius: 0.9375rem;
+    width: auto;
+    margin: 20px;
+  }
+
+  .hiring__info-detail {
+    padding: 0;
+  }
+}

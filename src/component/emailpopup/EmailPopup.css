@@ -1,0 +1,133 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 800;
+}
+
+.popup {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 800;
+  background-color: rgba(0, 0, 0, 0.134);
+}
+
+.hide {
+  display: none;
+}
+
+.popup__container {
+  height: 20rem;
+  width: 45%;
+  padding: 3em;
+  background-color: #0a0e24;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  border-radius: 0.5rem;
+  z-index: 999;
+}
+
+.popup__title {
+  font-family: "Space Quest Italic";
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  list-style: 0.5;
+  color: #e0eaf8;
+  margin-top: 1em;
+}
+
+.popup__close {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  cursor: pointer;
+}
+.popup__close:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transform: scale(1.07);
+}
+
+.popup__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.popup__input {
+  padding: 0.5em;
+  width: 80%;
+  margin: 2.5em 0;
+  outline: none;
+  border: 2px solid transparent;
+  font-family: "Saira";
+}
+.popup__input:focus {
+  border: 2px solid rgb(0, 200, 255);
+}
+
+.popup__submit {
+  font-weight: bold;
+}
+
+.popup__disclaimer {
+  font-size: 0.9rem;
+  margin-top: 2.5em;
+}
+
+.popup__span {
+  text-decoration: underline;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+#error {
+  color: rgb(0, 200, 255);
+  margin: 0px;
+  padding: 0px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 900px) {
+  .popup__container {
+    height: 18rem;
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 650px) {
+  .popup__title {
+    font-size: 1.3rem;
+  }
+  .popup__container {
+    width: 70%;
+    padding: 2em;
+  }
+  .popup__disclaimer {
+    font-size: 0.8rem;
+  }
+  .popup__input {
+    width: 92%;
+  }
+}

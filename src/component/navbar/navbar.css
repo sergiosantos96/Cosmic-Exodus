@@ -1,0 +1,137 @@
+.navbar__logo {
+  margin-top: 0.2em;
+  height: 4.5em;
+  width: 6em;
+  display: none;
+}
+/* Pc Version */
+.navbar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.navbar__container {
+  padding-top: 0.9375rem;
+  height: 73px;
+  margin: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__left > a > span {
+  display: none;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+  right: 1.5rem;
+  top: 20px;
+  z-index: 999;
+}
+.mobile-menu:hover {
+  background-color: transparent;
+}
+.mobile-menu:focus {
+  outline: none;
+}
+
+.bar-one,
+.bar-two,
+.bar-three {
+  width: 2rem;
+  height: 0.25rem;
+  background: #ffffff;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.bar-one {
+  transform: rotate(0);
+}
+
+.bar-two {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.bar-three {
+  transform: rotate(0);
+}
+
+.open .bar-one {
+  transform: rotate(45deg);
+}
+
+.open .bar-two {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.open .bar-three {
+  transform: rotate(-45deg);
+}
+
+/*Mobile Version*/
+.mobile-nav-wrapper {
+  z-index: 998;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #080b1d;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  height: 0%;
+  transition: opacity 0.75s, visibility 0.75s, height 0.75s;
+}
+
+.mobile-nav-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100vh;
+}
+
+.mobile-link {
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #e0eaf8;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 21px;
+  margin: 15px;
+  width: auto;
+  padding: 0 0px 15px;
+  border-bottom: 3px solid transparent;
+}
+.mobile-link:hover,
+.active {
+  border-bottom: 3px solid #30d1ff;
+}
+
+@media screen and (min-width: 200) and (max-width: 1084px) {
+  .active {
+    border-bottom: solid #30d1ff;
+  }
+}
+@media screen and (min-width: 200) and (max-width: 435) {
+  .navbar {
+    margin: 0 5%;
+    padding: 0;
+  }
+  .mobile-link {
+    font-size: 0.75rem;
+  }
+}

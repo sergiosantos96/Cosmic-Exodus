@@ -1,0 +1,64 @@
+.number {
+  background-color: rgb(0, 200, 255);
+  padding: 10px;
+  width: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.giveaway-step {
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.giveaway-step h4 {
+  margin: 0px;
+}
+
+.giveaway-step a {
+  color: rgb(0, 200, 255);
+  cursor: pointer;
+  font-size: 00.8rem;
+}
+.giveaway-step a:hover {
+  text-decoration: underline;
+}
+
+.inputStyle,
+.inputStyle-uncomplete {
+  width: 100%;
+  background-color: #090932;
+  height: 30px;
+  max-width: 690px;
+  font-size: 18px;
+  padding: 2px;
+  padding-left: 5px;
+  font-family: "Saira";
+  outline: none;
+  border: 2px solid rgb(0, 200, 255);
+  color: white;
+}
+
+.inputStyle:focus {
+  border: 2px solid transparent;
+}
+
+.inputStyle::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+.inputStyle-uncomplete {
+  border: 2px solid #f26929;
+}
+.inputStyle-uncomplete::placeholder {
+  color: white;
+  opacity: 0.6;
+}

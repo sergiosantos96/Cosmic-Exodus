@@ -1,0 +1,146 @@
+.homepage__intro {
+  background-image: url("../../../assets/Background_intro.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+
+.wrapper__gradient {
+  position: relative;
+}
+
+.homepage__gradient {
+  background-color: #0c1229;
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  top: -30px;
+  filter: blur(1.5rem);
+}
+
+.homepage__title {
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+  font-size: 4rem;
+  color: #e0eaf8;
+}
+
+.homepage__text {
+  margin-top: 3em;
+  margin: 0 5%;
+  position: relative;
+  z-index: 50;
+}
+
+.homepage__description {
+  margin: 0.2em;
+}
+
+.robo__img {
+  position: absolute;
+  right: 2.5%;
+  top: 3%;
+  z-index: 49;
+  animation: slowscale 3s ease-in-out alternate infinite;
+}
+
+.family__mobile {
+  display: none;
+}
+
+.homepage__family {
+  width: 100%;
+  height: 43.75rem;
+  margin-top: 2em;
+  object-fit: contain;
+}
+
+@keyframes slowscale {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.07);
+  }
+}
+
+@media screen and (min-width: 1450px) and (max-width: 2500px) {
+  .robo__img {
+    top: 3%;
+    right: 3%;
+  }
+  .homepage__text {
+    padding-left: 5em;
+  }
+
+  .video__gradient {
+    display: block;
+  }
+
+  .homepage__title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 1100px) {
+  .homepage__description {
+    padding-right: 5em;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 1200px) {
+  .homepage__title {
+    font-size: 3.8rem;
+    padding-top: 1.2em;
+  }
+  .robo__img {
+    height: 20rem;
+    top: 5%;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 860px) {
+  .homepage__title {
+    font-size: 3rem;
+    text-align: center;
+    font-size: 2.8rem;
+  }
+  .homepage__family {
+    display: none;
+  }
+  .family__mobile {
+    display: block;
+    width: 100%;
+    margin: 3em 0;
+  }
+  .robo__img {
+    height: 10rem;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 460px) {
+  .homepage__description {
+    margin-top: 0;
+    padding: 0;
+    padding-right: 2em;
+  }
+  .homepage__title {
+    line-height: 1.4;
+    padding-bottom: 0;
+    padding-top: 2em;
+  }
+  .robo__img {
+    height: 8rem;
+    top: 6%;
+    right: 1%;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 410px) {
+  .robo__img {
+    height: 6rem;
+    top: 5%;
+  }
+}

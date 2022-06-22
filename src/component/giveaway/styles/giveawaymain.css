@@ -1,0 +1,78 @@
+.giveaway__banner {
+  width: 100%;
+}
+.giveaway__mobilebanner {
+  visibility: hidden;
+  display: none;
+}
+
+.giveawaymain__title {
+  color: #e0eaf8;
+  font-size: 2.8rem;
+  line-height: 1.4;
+}
+
+.giveawaymain__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+  margin-top: 1em;
+  max-width: 770px;
+  margin-inline: auto;
+}
+
+.giveaway__line {
+  width: 100%;
+}
+
+.giveawaymain__form {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.giveaway__email {
+  width: 100%;
+  outline: none;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  font-family: "Saira";
+  max-width: 500px;
+}
+
+.giveaway__email:focus {
+  border: 2px solid rgb(0, 200, 255);
+}
+
+.inputStyle::placeholder {
+  opacity: 0.6;
+}
+
+.giveawaymain__newsletter {
+  text-align: right;
+  font-size: 0.7rem;
+  margin-top: 1.6em;
+  max-width: 300px;
+}
+
+.giveawaymain-span {
+  color: #30d1ff;
+}
+
+.giveaway__next {
+  margin: 2.5em 0;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1580px) {
+  .giveawaymain__title {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .giveawaymain__para {
+    width: 100%;
+  }
+}

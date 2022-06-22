@@ -1,0 +1,17 @@
+.video__container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 4em;
+}
+
+iframe {
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 675px) {
+  .video__container,
+  iframe {
+    height: 50vh !important;
+  }
+}

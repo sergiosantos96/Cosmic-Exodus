@@ -1,0 +1,237 @@
+.about {
+  text-align: center;
+  margin-bottom: 40em;
+}
+
+.about__mobilebanner {
+  visibility: hidden;
+  display: none;
+}
+.about__title {
+  text-align: center;
+  font-size: 4.375rem;
+}
+.about__line {
+  border: 1px solid #16215b;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about__subtitle,
+.about__text {
+  text-align: center;
+}
+.about__subtitle {
+  margin-top: 1.875rem;
+}
+.about__text {
+  margin-top: 1.25rem;
+  margin-bottom: 1.875rem;
+  text-align: center;
+  padding: 0 10em;
+}
+.about__name {
+  color: #30d1ff;
+  margin: 0.625rem;
+}
+.about__container {
+  color: #e0eaf8;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.about__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__logo {
+  width: 112px;
+  height: 112px;
+  padding-top: 1.25rem;
+}
+/* .about__link:hover {
+  filter: invert(53%) sepia(40%) saturate(354%) hue-rotate(197deg)
+    brightness(150%) contrast(83%);
+} */
+.about__link {
+  padding: 0.625rem;
+}
+
+.about__departement {
+  border-bottom: 0.125rem solid #30d1ff;
+  width: fit-content;
+  margin-left: 0.3125rem;
+}
+
+.about__banner {
+  width: 100%;
+}
+/*-------------------------Carousel------------------------*/
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.roadmap__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 73vw;
+}
+.about__grid {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.about__flex {
+  display: flex;
+  flex-direction: row;
+  margin: 1.25rem;
+}
+.card {
+  box-shadow: 0px 3px 27px rgba(0, 0, 0, 0.39);
+  border-radius: 10px;
+  margin: 20px;
+  width: 192px;
+  height: 323px;
+  flex: none;
+}
+
+/*-------------------------Arrow Buttons -------------------*/
+
+.roadmap__buttons {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 2.5rem;
+}
+.roadmap__arrow:hover {
+  background-color: transparent !important;
+  filter: sepia(81%) saturate(148%) hue-rotate(270deg) brightness(250%)
+    contrast(100%);
+}
+
+.roadmap__image-rigth,
+.roadmap__image {
+  filter: invert(99%) sepia(81%) saturate(148%) hue-rotate(270deg)
+    brightness(80%) contrast(100%);
+}
+
+.roadmap__arrow,
+.roadmap__image-rigth {
+  background-color: transparent;
+  cursor: pointer;
+}
+.roadmap__image {
+  transform: rotate(180deg);
+  margin-left: 0;
+}
+.roadmap__image,
+.roadmap__image-rigth {
+  width: 5rem;
+}
+.roadmap__arrow:hover {
+  width: fit-content;
+  border-radius: 5px;
+}
+.mobile__arrows {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .about__subtitle {
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-top: 3.125rem;
+  }
+  .about__text {
+    padding: 1rem;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .card {
+    margin: 0;
+    margin-right: 7%;
+    width: 100%;
+  }
+
+  .about__title {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .about__grid {
+    margin: 0;
+    width: 210px;
+  }
+  .about__flex {
+    margin-bottom: 30px;
+    height: 362px;
+    margin: 0;
+  }
+  .roadmap__buttons {
+    display: none;
+  }
+
+  .roadmap__container {
+    position: relative;
+    margin-bottom: 150px;
+  }
+  .mobile__arrows {
+    position: absolute;
+    top: 107%;
+    left: 0%;
+  }
+
+  .mobile__arrows:hover {
+    background-color: transparent !important;
+    filter: sepia(81%) saturate(148%) hue-rotate(270deg) brightness(250%)
+      contrast(100%);
+  }
+  .mobile__arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .about__title {
+    font-size: 2rem;
+  }
+
+  .about__container {
+    color: #e0eaf8;
+  }
+  .about {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .about__banner {
+    visibility: hidden;
+    display: none;
+  }
+  .about__mobilebanner {
+    visibility: visible;
+    display: block;
+  }
+  .about__text {
+    padding: 0;
+    padding-bottom: 1.125rem;
+    font-size: 1rem;
+    margin: 0;
+  }
+}

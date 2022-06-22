@@ -1,0 +1,175 @@
+.buttons__container {
+  margin-bottom: 60px !important;
+}
+.buttons__link {
+  margin-right: 30px;
+}
+.select {
+  display: none;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  margin: 0 10%;
+}
+.article__link {
+  cursor: pointer;
+}
+.article__card {
+  padding: 16px;
+  background: rgba(22, 33, 91, 0.5);
+  border-radius: 10px;
+  margin-right: 32px;
+  text-align: center;
+}
+.article__list {
+  text-align: left;
+  list-style: none;
+  display: flex;
+  flex-direction: row !important;
+  padding-left: 0;
+}
+.article__date {
+  text-align: left;
+  margin-right: 45px;
+}
+
+.article__type--active {
+  background-color: #f26929;
+  border-color: #f26929;
+  color: #fff;
+}
+
+.article__type {
+  background-color: #787ca9;
+  border-color: #787ca9;
+  color: #fff;
+  text-align: left;
+  border-radius: 5px;
+  color: 000;
+  width: fit-content;
+  padding: 5px;
+  font-weight: bold;
+}
+.guides {
+  background: #007adb;
+  border-color: #007adb;
+}
+
+.guest {
+  background: #ffc700;
+  border-color: #ffc700;
+}
+.memes {
+  background: #cd7bdd;
+  border-color: #cd7bdd;
+  color: #000;
+}
+
+.article__title,
+.article__info,
+.article__detail {
+  text-align: left;
+}
+
+.pagination {
+  text-align: center;
+  margin: 30px;
+}
+
+.pagination__button {
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .buttons__container {
+    display: none;
+  }
+  .select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin: 15px;
+    width: 60%;
+  }
+  .select select {
+    font-family: "Arial";
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    outline: 0;
+    border: 1px solid #fff;
+    border-radius: 29px;
+    background: #0c112a;
+    color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0 30%;
+  }
+  .select select::-ms-expand {
+    display: none;
+  }
+  .select select:hover,
+  .select select:focus {
+    color: #ffffff;
+    background: #0c112a;
+  }
+  .select select:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .select_arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 0px;
+    height: 0px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .select select:hover ~ .select_arrow,
+  .select select:focus ~ .select_arrow {
+    border-color: #fff;
+  }
+  .select select:disabled ~ .select_arrow {
+    border-top-color: #fff;
+  }
+  /* Cards Responsive */
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article__card {
+    width: 336px;
+    margin-bottom: 20px;
+    padding: 15px;
+    margin: 0 0%;
+  }
+  .article__image {
+    width: 336px;
+    height: auto;
+  }
+  .article__date {
+    margin-right: 15px;
+  }
+  .pagination {
+    margin: 0 12%;
+    margin-bottom: 47px;
+    margin-top: 40px;
+    margin-right: 0;
+  }
+  .article {
+    width: 320px;
+    margin: 0 0%;
+  }
+}

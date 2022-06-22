@@ -1,0 +1,94 @@
+.accordion__main {
+  margin-bottom: 4em;
+}
+
+.accordion__container {
+  margin: 0 7%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.faq__title {
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 0.4em 0;
+  margin: 0;
+}
+
+.faq__title,
+.accordion__title {
+  color: #e0eaf8;
+}
+
+.faq__img {
+  width: 100%;
+  display: block;
+}
+
+.mobile__banner {
+  display: none;
+}
+
+.accordion__line {
+  border: 1px solid #16215b;
+  margin: 0;
+  margin-top: 1.4em;
+}
+
+.accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion__title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.accordion__icon {
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.accordion__content {
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  max-height: 0;
+  opacity: 1;
+}
+
+.show {
+  max-height: 70em;
+  opacity: 1;
+}
+
+.accordion__text {
+  margin-top: -0.2em;
+}
+
+.accordion__text a {
+  color: #787ca9;
+}
+
+@media screen and (min-width: 280px) and (max-width: 520px) {
+  .mobile__banner {
+    display: block;
+    width: 100%;
+  }
+  .faq__img {
+    display: none;
+    width: 100%;
+  }
+  .accordion__container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .accordion__container {
+    margin: 0 5%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}

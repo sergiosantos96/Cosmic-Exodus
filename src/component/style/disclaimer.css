@@ -1,0 +1,49 @@
+.disclaimer__banner {
+  width: 100%;
+}
+
+.disclaimer__verticalbanner {
+  visibility: hidden;
+  display: none;
+}
+.disclaimer {
+  max-width: 75rem;
+  margin: auto;
+  margin-bottom: 4em;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 2.1875rem;
+}
+.disclaimer__description {
+  font-size: 1.375rem;
+  padding-left: 4.25rem;
+  padding-right: 4.25rem;
+}
+
+@media screen and (max-width: 500px) {
+  .disclaimer {
+    margin: 0 10%;
+  }
+  .disclaimer__title {
+    font-size: 30px;
+  }
+
+  .disclaimer__banner {
+    visibility: hidden;
+    display: none;
+  }
+  .disclaimer__verticalbanner {
+    visibility: visible;
+    display: block;
+    width: 100%;
+  }
+  .disclaimer__description {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .disclaimer__lasttext {
+    margin-bottom: 1.5625rem;
+  }
+}

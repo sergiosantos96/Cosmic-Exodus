@@ -1,0 +1,32 @@
+.routemap {
+  display: flex;
+  margin-left: 2.5rem;
+  margin-top: 2.5rem;
+}
+.routemap__text {
+  text-decoration: none;
+  color: #bbbb;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  display: flex;
+  border: none;
+}
+.maps {
+  display: flex;
+}
+
+@media screen and (max-width: 400px) {
+  .routemap {
+    padding-left: 0.9375rem;
+    margin-left: 0;
+    margin-top: 0.3125rem;
+  }
+  .routemap__link {
+    padding: 0;
+  }
+  .routemap {
+    margin-left: 0.9375rem;
+    margin-top: 0.9375rem;
+  }
+}
